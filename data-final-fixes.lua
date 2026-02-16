@@ -1,3 +1,8 @@
+require("compatibility.fuel")
+require("compatibility.aai-industry")
 require("compatibility.aai-vehicles-ironclad")
+require("compatibility.aai-vehicles-hauler")
+require("compatibility.aai-vehicles-chaingunner")
 require("compatibility.ironclad-gunboat")
 require("compatibility.hovercrafts")
+require("compatibility.cargo-ships")

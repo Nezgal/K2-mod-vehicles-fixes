@@ -3,5 +3,5 @@ if not mods["aai-vehicles-ironclad"] then
 end
 
 if data.raw.car["ironclad"] then
-    data.raw.car["ironclad"].equipment_grid = "kr-car-grid"
+    data.raw.car["ironclad"].equipment_grid = "kr-tank-grid"
 end

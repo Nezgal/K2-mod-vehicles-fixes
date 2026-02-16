@@ -2,15 +2,27 @@
   "name": "K2-mod-vehicles-fixes",
   "version": "1.0",
   "title": "Krastorio 2 mod vehicles Fixes",
-  "author": "nezgal",
-  "contact": "nezgal@protonmail.com",
+  "author": "Nezgal",
   "homepage": "https://github.com/Nezgal/AAI-vehicles-K2-fixes",
   "factorio_version": "2.0",
   "dependencies": [
     "base",
     "Krastorio2",
+    "? aai-industry",
+    "? aai-vehicles-hauler",
+    "? aai-vehicles-chaingunner",
     "? aai-vehicles-ironclad",
-    "? ironclad-gunboat-and-mortar-turret-fork"
+    "? ironclad-gunboat-and-mortar-turret-fork",
+    "? Hovercrafts",
+    "? cargo-ships"
   ],
-  "description": "Updates some AAI vehicles's grid to only accept vehicle equipment."
+  "description": "Some tweaks to mod vechicles grids and/or fuel when used with Krastorio 2:
+  - Updates some mods vehicles' grid to only accept vehicle equipment
+  - Adds grids to cargo ships & boats
+  - Sets AAI industry fuel processing as prerequisite for hauler and chaingunner (they now only use vehicle fuel)
+  - Nerfs AAI industry processed fuel to be worse than K2 standard fuel
+  - Prevents solid fuel and rocket fuel from being used in machines and vehicles (now only accept K2 vehicle fuels + AAI prcessed fuel)
+  - Adds chemical tech card as prerequisite for cargo ships automated bridges and deep sea oil extraction technologies
+
+  AAI miner vehicles, locomotives and cargo ships can still use any fuel (not including solid and rocket)"
 }
