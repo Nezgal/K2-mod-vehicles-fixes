@@ -1,0 +1,16 @@
+{
+  "name": "K2-mod-vehicles-fixes",
+  "version": "1.0",
+  "title": "Krastorio 2 mod vehicles Fixes",
+  "author": "nezgal",
+  "contact": "nezgal@protonmail.com",
+  "homepage": "https://github.com/Nezgal/AAI-vehicles-K2-fixes",
+  "factorio_version": "2.0",
+  "dependencies": [
+    "base",
+    "Krastorio2",
+    "? aai-vehicles-ironclad",
+    "? ironclad-gunboat-and-mortar-turret-fork"
+  ],
+  "description": "Updates some AAI vehicles's grid to only accept vehicle equipment."
+}
