@@ -2,26 +2,21 @@ if not mods["cargo-ships"] then
     return
 end
 
-if data.raw.item["boat"] then
-    data.raw.item["boat"].stack_size = 1
-end
+data.raw["item-with-entity-data"]["boat"].stack_size = 1
+data.raw.car["indep-boat"].equipment_grid = "kr-car-grid"
+data.raw.locomotive["cargo_ship_engine"].equipment_grid = "kr-locomotive-grid"
+data.raw.locomotive["boat_engine"].equipment_grid = "kr-car-grid"
+data.raw["mining-drill"]["oil_rig"].mining_speed = 4
 
-if data.raw.car["indep-boat"] then
-    data.raw.car["indep-boat"].equipment_grid = "kr-car-grid"
-end
+data_util.add_prerequisite("automated_bridges", "chemical-science-pack")
+data_util.add_prerequisite("deep_sea_oil_extraction", "chemical-science-pack")
+data_util.add_prerequisite("cargo_ships", "kr-fuel")
+data_util.add_prerequisite("tank_ship", "kr-fuel")
 
-if data.raw.locomotive["cargo_ship_engine"] then
-    data.raw.locomotive["cargo_ship_engine"].equipment_grid = "kr-locomotive-grid"
-end
+data.raw["item-with-entity-data"]["boat"].order = "c[water-transport]-a[boat]"
+data.raw["item-with-entity-data"]["cargo_ship"].order = "c[water-transport]-c[cargo-ship]"
+data.raw["item-with-entity-data"]["oil_tanker"].order = "c[water-transport]-c[oil-tanker]"
 
-if data.raw.locomotive["boat_engine"] then
-    data.raw.locomotive["boat_engine"].equipment_grid = "kr-car-grid"
-end
-
-if data.raw.technology["automated_bridges"] then
-    table.insert(data.raw.technology["automated_bridges"].prerequisites, "chemical-science-pack")
-end
-
-if data.raw.technology["deep_sea_oil_extraction"] then
-    table.insert(data.raw.technology["deep_sea_oil_extraction"].prerequisites, "chemical-science-pack")
+if mods["aai-programmable-vehicles"] then
+    data.raw["item-with-entity-data"]["boat-0"].order = "c[water-transport]-a[boat]"
 end
