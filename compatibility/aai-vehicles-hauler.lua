@@ -1,4 +1,4 @@
-if not mods["aai-vehicles-ironclad"] then
+if not mods["aai-vehicles-hauler"] then
     return
 end
 

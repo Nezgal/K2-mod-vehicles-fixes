@@ -1,6 +1,7 @@
 data_util = require("__Krastorio2__/data-util")
 require("compatibility.updates")
 require("compatibility.aai-industry")
+require("compatibility.aai-programmable-vehicles")
 require("compatibility.aai-vehicles-miner")
 require("compatibility.aai-vehicles-hauler")
 require("compatibility.aai-vehicles-chaingunner")
