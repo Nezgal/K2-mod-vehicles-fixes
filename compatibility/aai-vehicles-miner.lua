@@ -36,3 +36,10 @@ data.raw.technology["vehicle-miner-5"].unit.time = 60
 data_util.replace_and_overwrite_or_add_ingredient("vehicle-miner-mk5", "steel-plate", { type = "item", name = "kr-imersium-plate", amount = 30 })
 data_util.replace_and_overwrite_or_add_ingredient("vehicle-miner-mk5", "electric-engine-unit", { type = "item", name = "kr-electric-mining-drill-mk3", amount = 5 })
 data_util.replace_and_overwrite_or_add_ingredient("vehicle-miner-mk5", "fission-reactor-equipment", { type = "item", name = "kr-energy-control-unit", amount = 10 })
+
+local light = table.deepcopy(data.raw.car["tank"].light)
+data.raw.car["vehicle-miner"].light = light
+data.raw.car["vehicle-miner-mk2"].light = light
+data.raw.car["vehicle-miner-mk3"].light = light
+data.raw.car["vehicle-miner-mk4"].light = light
+data.raw.car["vehicle-miner-mk5"].light = light

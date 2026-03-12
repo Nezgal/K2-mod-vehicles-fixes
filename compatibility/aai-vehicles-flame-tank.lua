@@ -11,6 +11,13 @@ data_util.add_prerequisite("vehicle-flame-tank", "vehicle-flame-tumbler")
 data_util.remove_prerequisite("vehicle-flame-tank", "flamethrower")
 
 data_util.remove_recipe_unlock("vehicle-flame-tank", "flamejet-ammo")
+data_util.remove_recipe_unlock("flamethrower", "flamejet-ammo")
+data.raw.ammo["flamejet-ammo"].enabled = false
+data.raw.ammo["flamejet-ammo"].hidden = true
+data.raw.ammo["flamejet-ammo"].hidden_in_factoriopedia = true
+data.raw.recipe["flamejet-ammo"].enabled = false
+data.raw.recipe["flamejet-ammo"].hidden = true
+data.raw.recipe["flamejet-ammo"].hidden_in_factoriopedia = true
 
 data.raw["item-with-entity-data"]["vehicle-flame-tank"].order = "b[personal-transport]-b[tank]-a[flame-tank]"
 
