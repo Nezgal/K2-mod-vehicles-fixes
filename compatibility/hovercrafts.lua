@@ -14,3 +14,8 @@ if mods["aai-programmable-vehicles"] then
     data.raw["item-with-entity-data"]["hovercraft-0"].order = "b[personal-transport]-c[hovercraft]-a[hovercraft]"
     data.raw["item-with-entity-data"]["missile-hovercraft-hovercraft-missile-turret"].order = "b[personal-transport]-c[hovercraft]-b[missile-hovercraft]"
 end
+
+if mods["light-overhaul"] then
+    data.raw.car["hovercraft"].light = data.raw.car["car"].light
+    data.raw.car["missile-hovercraft"].light = data.raw.car["car"].light
+end

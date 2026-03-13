@@ -23,7 +23,8 @@
     "? Hovercrafts",
     "? cargo-ships",
     "? K2-clean-trains",
-    "? equipment-gantry"
+    "? equipment-gantry",
+    "? light-overhaul"
   ],
   "description": "Some tweaks to mod vechicles fuel when used with Krastorio 2:
   - Updates some mods vehicles' grid to only accept vehicle equipment
@@ -35,6 +36,7 @@
   - Adds chemical tech card as prerequisite for cargo ships automated bridges and deep sea oil extraction technologies
   - Adds nuclear locomotives as prerequisite for fusion locomotives in K2 clean trains (also transfers fuel efficiency directly to the trains max speed instead of the fuel cells)
   - Reworks some recipe sorting in crafting menu
+  - Fixes some vehicles lights
 
   AAI miner vehicles, locomotives and cargo ships can still use any fuel (not including solid and rocket)
 
