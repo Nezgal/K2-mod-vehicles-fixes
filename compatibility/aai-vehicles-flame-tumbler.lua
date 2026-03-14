@@ -6,6 +6,8 @@ data_util.overwrite_or_add_ingredient("vehicle-flame-tumbler", { type = "item", 
 data_util.overwrite_or_add_ingredient("vehicle-flame-tumbler", { type = "item", name = "advanced-circuit", amount = 10 })
 data_util.replace_and_overwrite_or_add_ingredient("vehicle-flame-tumbler", "iron-gear-wheel", { type = "item", name = "flamethrower", amount = 1 })
 
+data.raw.technology["vehicle-flame-tumbler"].unit.count = 100
+data.raw.technology["vehicle-flame-tumbler"].unit.time = 30
 data_util.remove_recipe_unlock("vehicle-flame-tumbler", "flamejet-ammo")
 data_util.remove_recipe_unlock("flamethrower", "flamejet-ammo")
 data.raw.ammo["flamejet-ammo"].enabled = false

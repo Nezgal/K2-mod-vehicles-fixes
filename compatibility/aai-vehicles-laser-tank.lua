@@ -6,6 +6,8 @@ data_util.replace_and_overwrite_or_add_ingredient("vehicle-laser-tank", "steel-p
 data_util.overwrite_or_add_ingredient("vehicle-laser-tank", { type = "item", name = "engine-unit", amount = 20 })
 
 data.raw["item-with-entity-data"]["vehicle-laser-tank"].order = "b[personal-transport]-b[tank]-b[laser-tank]"
+data.raw.technology["vehicle-laser-tank"].unit.count = 300
+data.raw.technology["vehicle-laser-tank"].unit.time = 60
 
 if mods["aai-programmable-vehicles"] then
     data.raw["item-with-entity-data"]["vehicle-laser-tank-laser-tank-cannon"].order = "b[personal-transport]-b[tank]-b[laser-tank]"

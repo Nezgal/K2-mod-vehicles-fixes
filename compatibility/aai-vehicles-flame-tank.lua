@@ -7,8 +7,12 @@ data_util.replace_and_overwrite_or_add_ingredient("vehicle-flame-tank", "iron-ge
 data_util.overwrite_or_add_ingredient("vehicle-flame-tank", { type = "item", name = "engine-unit", amount = 20 })
 data_util.overwrite_or_add_ingredient("vehicle-flame-tank", { type = "item", name = "tank", amount = 1 })
 
+data_util.add_prerequisite("vehicle-flame-tank", "tank")
 data_util.add_prerequisite("vehicle-flame-tank", "vehicle-flame-tumbler")
 data_util.remove_prerequisite("vehicle-flame-tank", "flamethrower")
+data_util.add_research_unit_ingredient("vehicle-flame-tank", "chemical-science-pack", 1)
+data.raw.technology["vehicle-flame-tank"].unit.count = 300
+data.raw.technology["vehicle-flame-tank"].unit.time = 60
 
 data_util.remove_recipe_unlock("vehicle-flame-tank", "flamejet-ammo")
 data_util.remove_recipe_unlock("flamethrower", "flamejet-ammo")
